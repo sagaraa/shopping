@@ -1,0 +1,109 @@
+<link rel='stylesheet' href='/stylesheets/index.css' />
+
+{{# each products}}
+     <div class="row">
+         {{# each this}}
+            <div class="col-md-4 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-responsive" src={{this.imagePath}} alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{this.title}}</h5>
+                        <p class="card-text description">{{this.description}}</p>
+                        <div class="">
+                            <span class="price float-left">$ {{this.price}}</span>
+                            <a href="#" class="btn btn-success btn-sm float-right">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         {{/each}}
+     </div>
+{{/each}}
+
+{{!-- 
+<div class="row">
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gothiccover.png/220px-Gothiccover.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="">
+                    <span class="price float-left">12$</span>
+                    <a href="#" class="btn btn-success btn-sm float-right">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gothiccover.png/220px-Gothiccover.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="">
+                    <span class="price float-left">12$</span>
+                    <a href="#" class="btn btn-success btn-sm float-right">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gothiccover.png/220px-Gothiccover.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="">
+                    <span class="price float-left">12$</span>
+                    <a href="#" class="btn btn-success btn-sm float-right">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gothiccover.png/220px-Gothiccover.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="">
+                    <span class="price float-left">12$</span>
+                    <a href="#" class="btn btn-success btn-sm float-right">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gothiccover.png/220px-Gothiccover.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="">
+                    <span class="price float-left">12$</span>
+                    <a href="#" class="btn btn-success btn-sm float-right">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Gothiccover.png/220px-Gothiccover.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="">
+                    <span class="price float-left">12$</span>
+                    <a href="#" class="btn btn-success btn-sm float-right">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
